@@ -1,7 +1,7 @@
 # Sentinova
 
 <div align="center">
-  <img src="https://github.com/Sentinova-Summarization-Sentiment/.github/blob/main/sentinova-logo.png?raw=true" width="200">
+  <img src="https://github.com/Sentinova-Summarization-Sentiment/.github/blob/main/logo-sentinova.png?raw=true" width="200">
   <h1 align="center">SENTINOVA</h1>
   <h2 align="center">Summarization dan Sentiment Analysis Bahasa Indonesia</h2>
 </div>
@@ -41,7 +41,7 @@ Proyek ini dikembangkan untuk membantu pengguna dalam:
 | **Model Summarization**| Fine-tuning IndoT5 untuk menghasilkan ringkasan ulasan produk (abstractive summarization) | [modelsumarisasi](https://github.com/Sentinova-Summarization-Sentiment/modelsumarisasi)     |
 | **Model Sentiment (ML)** | Menggunakan IndoBERT untuk klasifikasi sentimen (fine-tuning pretrained transformer)       | [modelsentimen-ml](https://github.com/Sentinova-Summarization-Sentiment/modelsentimen-ml)   |
 | **Model Sentiment (DM)** | Menggunakan RapidMiner dan algoritma klasik seperti SVM/Naive Bayes pada data ulasan      | [modelsentimen-dm](https://github.com/Sentinova-Summarization-Sentiment/modelsentimen-dm)   |
-| **Frontend Aplikasi**  | Aplikasi web (React + FastAPI) untuk mengakses fitur summarization dan sentimen            | [frontend](https://github.com/Sentinova-Summarization-Sentiment/frontend)                   |
+| **Frontend Aplikasi**  | Aplikasi web (React + Flask) untuk mengakses fitur summarization dan sentimen            | [frontend](https://github.com/Sentinova-Summarization-Sentiment/frontend)                   |
 
 ---
 
@@ -58,7 +58,7 @@ Proyek ini dikembangkan untuk membantu pengguna dalam:
 - IndoT5, IndoBERT (HuggingFace)
 - TensorFlow / PyTorch
 - Scikit-learn, RapidMiner
-- ReactJS & FastAPI
+- ReactJS & Flask
 - Sastrawi, NLTK, SpaCy
 
 ---
