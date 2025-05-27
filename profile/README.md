@@ -1,7 +1,7 @@
 # Sentinova
 
 <div align="center">
-  <img src="https://github.com/Sentinova-Summarization-Sentiment/.github/blob/main/logo-sentinova.png?raw=true" width="200">
+  <img src="https://github.com/Sentinova-Summarization-Sentiment/.github/blob/main/logo_sentinova.png" width="200">
   <h1 align="center">SENTINOVA</h1>
   <h2 align="center">Summarization dan Sentiment Analysis Bahasa Indonesia</h2>
 </div>
