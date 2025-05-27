@@ -10,15 +10,16 @@
 
 ## Tentang Proyek
 
-**Sentinova** adalah proyek pengembangan sistem AI yang memadukan dua teknologi utama dalam pemrosesan bahasa alami (Natural Language Processing / NLP), yaitu:
+**Sentinova** adalah sistem berbasis AI yang menggabungkan dua teknik utama dalam NLP (Natural Language Processing): **abstractive summarization** dan **sentiment analysis** untuk Bahasa Indonesia.
 
-- **Abstractive Text Summarization**  
-  Menggunakan model **IndoT5**, sistem kami mampu menghasilkan ringkasan otomatis dari berbagai ulasan produk e-commerce dengan tetap mempertahankan informasi penting. Model ini tidak hanya mengambil kalimat dari teks asli, tetapi menyusun ulang informasi menjadi kalimat baru yang lebih padat dan mudah dipahami.
+Proyek ini dikembangkan untuk membantu pengguna dalam:
+- Menyederhanakan ulasan panjang dari e-commerce menjadi ringkasan otomatis menggunakan model **IndoT5**
+- Mengklasifikasikan opini pelanggan (positif, netral, negatif) menggunakan **IndoBERT** atau metode tradisional seperti **SVM dan Naive Bayes**
 
-- **Sentiment Analysis**  
-  Menggunakan model **IndoBERT**, sistem mengklasifikasikan opini pengguna menjadi **positif**, **netral**, atau **negatif**. Proses ini memudahkan bisnis dalam memahami respons pelanggan secara otomatis tanpa membaca satu per satu ulasan panjang.
-
-Sistem dibangun dalam bentuk aplikasi web yang user-friendly, sehingga pengguna dapat mengakses fitur summarization dan analisis sentimen secara langsung dan efisien.
+📘 Proyek ini dikembangkan sebagai bagian dari tugas akhir untuk memenuhi **3 mata kuliah utama**, yaitu:
+- **Natural Language Processing**
+- **Machine Learning**
+- **Data Mining**
 
 ---
 
@@ -33,36 +34,40 @@ Sistem dibangun dalam bentuk aplikasi web yang user-friendly, sehingga pengguna 
 
 ---
 
-## Repositori Proyek
+## Struktur Repositori
 
-| Modul                | Repository GitHub                                                                 |
-| :------------------ | :--------------------------------------------------------------------------------- |
-| Model Sentiment      | [modelsentimen](https://github.com/Sentinova-Summarization-Sentiment/modelsentimen)         |
-| Model Summarization  | [modelsumarisasi](https://github.com/Sentinova-Summarization-Sentiment/modelsumarisasi)     |
-| Frontend Aplikasi    | [frontend](https://github.com/Sentinova-Summarization-Sentiment/frontend)                 |
-
----
-
-## Ringkasan Fitur
-
-- 🔍 Ringkasan otomatis dari ulasan produk panjang menggunakan IndoT5
-- 😊 Deteksi dan klasifikasi sentimen pelanggan menggunakan IndoBERT
-- 🌐 Aplikasi berbasis web yang mudah digunakan untuk pengambilan keputusan berbasis data
+| Modul                  | Deskripsi                                                                                  | Repository                                                                                   |
+|------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| **Model Summarization**| Fine-tuning IndoT5 untuk menghasilkan ringkasan ulasan produk (abstractive summarization) | [modelsumarisasi](https://github.com/Sentinova-Summarization-Sentiment/modelsumarisasi)     |
+| **Model Sentiment (ML)** | Menggunakan IndoBERT untuk klasifikasi sentimen (fine-tuning pretrained transformer)       | [modelsentimen-ml](https://github.com/Sentinova-Summarization-Sentiment/modelsentimen-ml)   |
+| **Model Sentiment (DM)** | Menggunakan RapidMiner dan algoritma klasik seperti SVM/Naive Bayes pada data ulasan      | [modelsentimen-dm](https://github.com/Sentinova-Summarization-Sentiment/modelsentimen-dm)   |
+| **Frontend Aplikasi**  | Aplikasi web (React + FastAPI) untuk mengakses fitur summarization dan sentimen            | [frontend](https://github.com/Sentinova-Summarization-Sentiment/frontend)                   |
 
 ---
 
-## Teknologi Utama
+## Fitur Utama
 
-- IndoT5 (Text-to-Text Transfer Transformer untuk Bahasa Indonesia)
-- IndoBERT (Sentiment Classifier untuk Bahasa Indonesia)
-- React.js (Frontend)
-- FastAPI (Backend)
-- Python, PyTorch, HuggingFace Transformers
+- 🔍 **Ringkasan Otomatis** – Merangkum review panjang menjadi kalimat yang lebih singkat dan padat.
+- 😊 **Analisis Sentimen** – Mengklasifikasikan review ke dalam sentimen positif, netral, atau negatif.
+- 🌐 **Aplikasi Web** – User interface interaktif untuk menjalankan fitur dengan mudah.
+
+---
+
+## Teknologi Digunakan
+
+- IndoT5, IndoBERT (HuggingFace)
+- TensorFlow / PyTorch
+- Scikit-learn, RapidMiner
+- ReactJS & FastAPI
+- Sastrawi, NLTK, SpaCy
 
 ---
 
 ## Tujuan Proyek
 
-- Membantu perusahaan atau pengguna menganalisis ribuan review secara otomatis
-- Menyediakan insight singkat dan bermakna dari data tekstual
-- Menghemat waktu membaca ulasan panjang satu per satu
+- Membantu pengguna memahami banyak ulasan produk secara efisien
+- Menyediakan insight yang ringkas dan bermakna dari teks tidak terstruktur
+- Mendemonstrasikan pemahaman lintas-mata kuliah dalam proyek berbasis NLP
+
+---
+
