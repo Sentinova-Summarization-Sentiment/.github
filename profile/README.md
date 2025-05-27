@@ -1,76 +1,68 @@
-# .github
+# Sentinova
 
-# NutriRate
-
-<!-- PROJECT LOGO -->
-<br />
 <div align="center">
-  <img src="https://github.com/NutriRate-Bangkit/.github/blob/main/NutriRate.png?raw=true" width="200">
+  <img src="https://github.com/Sentinova-Summarization-Sentiment/.github/blob/main/sentinova-logo.png?raw=true" width="200">
   <h1 align="center">SENTINOVA</h1>
-  <h2 align="center">Nutrition, Simplified</h2>
+  <h2 align="center">Summarization dan Sentiment Analysis Bahasa Indonesia</h2>
 </div>
 
 ---
 
-## About The Project
+## Tentang Proyek
 
-Public health in Indonesia is heavily impacted by a lack of awareness regarding nutritional information on food products, with only 6.7% of consumers reading labels (*Amerta Nutrition, 2023*). This ignorance contributes to rising rates of obesity and other non-communicable diseases (NCDs), such as diabetes.
+**Sentinova** adalah proyek pengembangan sistem AI yang memadukan dua teknologi utama dalam pemrosesan bahasa alami (Natural Language Processing / NLP), yaitu:
 
-To address this, **NutriRate** is a mobile platform that empowers users by providing:
-- An easy-to-understand grading system (A–E) for food products.
-- A focus on inclusivity and accessibility to maximize public health impact.
+- **Abstractive Text Summarization**  
+  Menggunakan model **IndoT5**, sistem kami mampu menghasilkan ringkasan otomatis dari berbagai ulasan produk e-commerce dengan tetap mempertahankan informasi penting. Model ini tidak hanya mengambil kalimat dari teks asli, tetapi menyusun ulang informasi menjadi kalimat baru yang lebih padat dan mudah dipahami.
 
-Our platform uses machine learning to classify and analyze food nutritional values, ensuring accurate and reliable results.
+- **Sentiment Analysis**  
+  Menggunakan model **IndoBERT**, sistem mengklasifikasikan opini pengguna menjadi **positif**, **netral**, atau **negatif**. Proses ini memudahkan bisnis dalam memahami respons pelanggan secara otomatis tanpa membaca satu per satu ulasan panjang.
 
----
-
-## Team Members
-
-| ID            | Name                      | Learning Path       | GitHub Profile                                 |
-| :-----------: | :-----------------------: | :-----------------: | :-------------------------------------------: |
-| M271B4KY0321  | Albertus Arga Soetasad    | Machine Learning    | [@aargas13](https://github.com/aargas13)      |
-| M128B4KX3387  | Nishrina Khoirunnisa      | Machine Learning    | [@nishnisa](https://github.com/nishnisa)      |
-| M006B4KY4597  | Zaki Marsyandi            | Machine Learning    | [@zakimars](https://github.com/zakimars)      |
-| C128B4KY1595  | Gema Hafizh Maulidi       | Cloud Computing     | [@gemahafizhmaulidi](https://github.com/gemahafizhmaulidi) |
-| C128B4KY2633  | Muhammad Faried           | Cloud Computing     | [@mhmdfaried](https://github.com/mhmdfaried)  |
-| A128B4KY2920  | Muhammad Izhhar Farhan    | Mobile Development  | [@izhharfarhan](https://github.com/izhharfarhan) |
-| A128B4KY3617  | Ragiliawan Putra Rencana  | Mobile Development  | [@ragiliawanputraa](https://github.com/ragiliawanputraa) |
+Sistem dibangun dalam bentuk aplikasi web yang user-friendly, sehingga pengguna dapat mengakses fitur summarization dan analisis sentimen secara langsung dan efisien.
 
 ---
 
-## Repositories
+## Anggota Tim
 
-| Learning Path      | Repository Link                                     |
-| :----------------: | :------------------------------------------------: |
-| Machine Learning   | [NutriRate-ML](https://github.com/NutriRate-Bangkit/nutrirate-machine-learning) |
-| Cloud Computing    | [NutriRate-CC](https://github.com/NutriRate-Bangkit/nutrirate-cloud-computing) |
-| Mobile Development | [NutriRate-MD](https://github.com/NutriRate-Bangkit/NutriRate-MobileDevelopment) |
-
----
-
-## Project Documents
-
-- **[Project Brief](#)**
-- **[APK Link](#)**
-- **[Video Presentation](#)**
-- **[Presentation Slides](#)**
+| Nama Lengkap                    | NIM           |
+| :----------------------------- | :------------ |
+| Aditya Farras Zaky Firmansyah | 2207412020    |
+| Laiqah Noor Muin               | 2207412023    |
+| Muhammad Husain Al Ghazaly    | 2207412027    |
+| Ragiliawan Putra Rencana      | 2207412013    |
 
 ---
 
-## App Overview
+## Repositori Proyek
 
-### Prerequisites
-- Android device
-- Internet connection
-
-### Installation
-- Download the APK.
-- Install the APK on your Android device.
-
-### Registration
-- Open the NutriRate application.
-- Register using your email address.
+| Modul                | Repository GitHub                                                                 |
+| :------------------ | :--------------------------------------------------------------------------------- |
+| Model Sentiment      | [modelsentimen](https://github.com/Sentinova-Summarization-Sentiment/modelsentimen)         |
+| Model Summarization  | [modelsumarisasi](https://github.com/Sentinova-Summarization-Sentiment/modelsumarisasi)     |
+| Frontend Aplikasi    | [frontend](https://github.com/Sentinova-Summarization-Sentiment/frontend)                 |
 
 ---
 
-## Documentation
+## Ringkasan Fitur
+
+- 🔍 Ringkasan otomatis dari ulasan produk panjang menggunakan IndoT5
+- 😊 Deteksi dan klasifikasi sentimen pelanggan menggunakan IndoBERT
+- 🌐 Aplikasi berbasis web yang mudah digunakan untuk pengambilan keputusan berbasis data
+
+---
+
+## Teknologi Utama
+
+- IndoT5 (Text-to-Text Transfer Transformer untuk Bahasa Indonesia)
+- IndoBERT (Sentiment Classifier untuk Bahasa Indonesia)
+- React.js (Frontend)
+- FastAPI (Backend)
+- Python, PyTorch, HuggingFace Transformers
+
+---
+
+## Tujuan Proyek
+
+- Membantu perusahaan atau pengguna menganalisis ribuan review secara otomatis
+- Menyediakan insight singkat dan bermakna dari data tekstual
+- Menghemat waktu membaca ulasan panjang satu per satu
