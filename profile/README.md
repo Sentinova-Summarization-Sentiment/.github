@@ -40,7 +40,7 @@ Proyek ini dikembangkan untuk membantu pengguna dalam:
 |------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
 | **Model Summarization**| Fine-tuning IndoT5 untuk menghasilkan ringkasan ulasan produk (abstractive summarization) | [modelsumarisasi](https://github.com/Sentinova-Summarization-Sentiment/modelsumarisasi)     |
 | **Model Sentiment (ML)** | Menggunakan IndoBERT untuk klasifikasi sentimen (fine-tuning pretrained transformer)       | [modelsentimen-ml](https://github.com/Sentinova-Summarization-Sentiment/modelsentimen-ml)   |
-| **Model Sentiment (DM)** | Menggunakan RapidMiner dan algoritma klasik seperti SVM/Naive Bayes pada data ulasan      | [modelsentimen-dm](https://github.com/Sentinova-Summarization-Sentiment/modelsentimen-dm)   |
+| **Model Sentiment (DM)** | Menggunakan RapidMiner dan algoritma klasik seperti SVM/Naive Bayes pada data ulasan      | [modelsentimen-dm]([https://github.com/Sentinova-Summarization-Sentiment/modelsentimen-dm](https://github.com/Sentinova-Summarization-Sentiment/Klasifikasi-Model-DM-SENTINOVA.git))   |
 | **Frontend Aplikasi**  | Aplikasi web (React + Flask) untuk mengakses fitur summarization dan sentimen            | [frontend](https://github.com/Sentinova-Summarization-Sentiment/frontend)                   |
 
 ---
